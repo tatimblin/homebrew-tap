@@ -1,20 +1,20 @@
 class SonosCli < Formula
   desc "CLI and TUI for controlling Sonos speakers"
   homepage "https://github.com/tatimblin/sonos-cli"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tatimblin/sonos-cli/releases/download/v0.2.0/sonos-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "27881c1cfcd6e889265aa8a93933fd668da36eab4aca6b9795901dda3a602a95"
+      url "https://github.com/tatimblin/sonos-cli/releases/download/v0.3.0/sonos-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "c86fc750c007809244905fb9b9a5790cdaee6dfc6518825e7ada669df567a847"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tatimblin/sonos-cli/releases/download/v0.2.0/sonos-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "a922baaa0ff4dcfaa22dda192bd0f8fd4de0a02344da4d2bc97ba1565ceb7efa"
+      url "https://github.com/tatimblin/sonos-cli/releases/download/v0.3.0/sonos-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "f828d6e14d5b2af6873d18c02dab2aaf753fb63c8182506e283a933bc2203d61"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/tatimblin/sonos-cli/releases/download/v0.2.0/sonos-cli-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "f4366aaec7746ecc6e3aa24939eecfea80ea8cbf6112c7b04b3787ec358203ab"
+    url "https://github.com/tatimblin/sonos-cli/releases/download/v0.3.0/sonos-cli-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "32abbcff1093c4309da50e19911e5c41a12548cecb893cbc924c7e4b098202e5"
   end
   license "MIT"
 
