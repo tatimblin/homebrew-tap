@@ -1,15 +1,15 @@
 class Delldisplay < Formula
   desc "Command-line control for Dell monitors over DDC/CI."
   homepage "https://github.com/tatimblin/delldisplay"
-  version "0.1.1"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tatimblin/delldisplay/releases/download/v0.1.1/ddc-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "c9e5c7186c9a590219a92236d2ac79bdd685a5b1d5703de8a2d70ba2e04a45c8"
+      url "https://github.com/tatimblin/delldisplay/releases/download/v0.1.2/ddc-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "4a41317a30d9f69d676b5834145ce4ca8c180f1ca2d183e8e96a3460268e2d29"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tatimblin/delldisplay/releases/download/v0.1.1/ddc-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "3333e41abffe0b1826d44069458e71d33395e6d23c280141a26ec818083032d8"
+      url "https://github.com/tatimblin/delldisplay/releases/download/v0.1.2/ddc-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "a2e12b45574b4ba9cbc57f14bdcfa92cb24a7688e028f9b3e2b3899f903a465d"
     end
   end
   license "MIT"
